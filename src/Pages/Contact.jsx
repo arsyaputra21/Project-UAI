@@ -12,11 +12,7 @@ const ContactStyled = styled.div`
 `;
 
 const Contact = () => {
-  return (
-    <ContactStyled>
-      <h1>Get In Touch</h1>
-    </ContactStyled>
-  );
+  return <ContactStyled></ContactStyled>;
 };
 
 export default Contact;

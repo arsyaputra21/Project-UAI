@@ -30,7 +30,10 @@ const FloatingWhatsappStyled = styled.a`
 `;
 const FloatingWhatsapp = () => {
   return (
-    <FloatingWhatsappStyled href="https://wa.me/628119444283?text=Hello,%20I'm%20interested%20in%20your%20product%20,I%20want%20to%20know%20more">
+    <FloatingWhatsappStyled
+      href="https://wa.me/628119444283?text=Hello,%20I'm%20interested%20in%20your%20product%20,I%20want%20to%20know%20more"
+      target="_blank"
+    >
       <FaWhatsapp />
     </FloatingWhatsappStyled>
   );

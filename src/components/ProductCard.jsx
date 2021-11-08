@@ -36,7 +36,7 @@ const CardStyled = styled.div`
     }
     p {
       font-family: "Playfair Display", serif;
-      a {
+      span.read-more {
         font-weight: bold;
         text-decoration: none;
         color: inherit;
@@ -53,13 +53,14 @@ const ProductCard = ({ img, title, desc, link }) => {
     <CardStyled>
       <a href={link}>
         <div className="img-box">
-          <img src={img} alt={title} />
+          <img src={img} alt={title} data-aos="zoom-in" />
         </div>
 
         <div className="text-box">
           <h3>{title}</h3>
           <p>
-            {`${desc.substring(0, 100)} ...`} <a href={link}>Read More</a>
+            {`${desc.substring(0, 100)} ...`}{" "}
+            <span className="read-more">Read More</span>
           </p>
         </div>
       </a>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import illustration from "../../images/about-us.webp";
 import { Link } from "react-router-dom";
 const AboutStyled = styled.div`
+  overflow: hidden;
   padding: 3rem;
   display: flex;
   align-items: center;
@@ -56,10 +57,10 @@ const AboutStyled = styled.div`
 const AboutSection = () => {
   return (
     <AboutStyled>
-      <div className="img-box">
+      <div className="img-box" data-aos="fade-right">
         <img src={illustration} alt="illustration" />
       </div>
-      <div className="text-box">
+      <div className="text-box" data-aos="fade-left">
         <h1>About Us</h1>
         <p>
           We are an Indonesian company that engaged in the export of coconut

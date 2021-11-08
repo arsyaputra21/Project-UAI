@@ -88,6 +88,7 @@ const SlickSlider = () => {
     centerPadding: "0",
     dots: true,
     autoplay: true,
+
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     beforeChange: (current, next) => {

@@ -3,8 +3,7 @@ import peatblock from "./images/peatblock.webp";
 import charcoal from "./images/charcoalbriquette.webp";
 import BryanFarrel from "./images/BryanFarrel.webp";
 import BenedictusAdriel from "./images/BenedictusAdriel.webp";
-import GentaCandra from "./images/GentaCandra.webp";
-import RajaSatria from "./images/RajaSatria.webp";
+
 import img1 from "./images/Gallery/img1.webp";
 import img2 from "./images/Gallery/img2.webp";
 import img3 from "./images/Gallery/img3.webp";
@@ -44,39 +43,17 @@ const TeamData = [
     name: "Benedictus Adriel",
     role: "Founder",
     avatar: BenedictusAdriel,
-    quote:
-      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae illo laborum blanditiis quam dolores quasi."',
 
-    linkedin: "https://www.linkedin.com/",
-    instagram: "https://www.instagram.com/",
+    linkedin: "https://www.linkedin.com/in/benedictus-adriel-7287981b7/",
+    instagram: "https://instagram.com/benedictusadriel?",
   },
   {
     name: "Bryan Farrel",
     role: "Co-Founder",
     avatar: BryanFarrel,
-    quote:
-      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae illo laborum blanditiis quam dolores quasi."',
 
-    linkedin: "https://www.linkedin.com/",
-    instagram: "https://www.instagram.com/",
-  },
-  {
-    name: "Raja Satria",
-    role: "Bussiness Development",
-    avatar: RajaSatria,
-    quote:
-      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae illo laborum blanditiis quam dolores quasi."',
-    linkedin: "https://www.linkedin.com/",
-    instagram: "https://www.instagram.com/",
-  },
-  {
-    name: "Genta Candra",
-    role: "Market Analyst",
-    avatar: GentaCandra,
-    quote:
-      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae illo laborum blanditiis quam dolores quasi."',
-    linkedin: "https://www.linkedin.com/",
-    instagram: "https://www.instagram.com/",
+    linkedin: " https://www.linkedin.com/in/bryanfarrel",
+    instagram: " https://www.instagram.com/bryan.farrel/?hl=en",
   },
 ];
 

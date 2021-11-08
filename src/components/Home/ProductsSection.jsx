@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ProductCard from "../ProductCard";
 import { ProductData } from "../../Data";
 const ProductStyled = styled.div`
+  overflow: hidden;
   width: 100%;
 
   padding: 2rem 3rem;

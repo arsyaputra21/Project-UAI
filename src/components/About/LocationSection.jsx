@@ -33,7 +33,7 @@ const LocationStyled = styled.div`
 
 const LocationSection = () => {
   return (
-    <LocationStyled>
+    <LocationStyled data-aos="zoom-in">
       <div className="map-img">
         <img src={indonesiaMap} alt="" />
       </div>

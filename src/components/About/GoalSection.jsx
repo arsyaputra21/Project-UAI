@@ -73,7 +73,7 @@ const GoalSection = () => {
   return (
     <GoalStyled>
       <h1>Our Goals</h1>
-      <div className="goal goal1">
+      <div className="goal goal1" data-aos="zoom-in-right">
         <div className="avatar">
           <img src={BenedictusAdriel} alt="Benedictus Adriel" />
           <h4>Benedictus Adriel</h4>
@@ -88,7 +88,7 @@ const GoalSection = () => {
           </p>
         </div>
       </div>
-      <div className="goal goal2">
+      <div className="goal goal2" data-aos="zoom-in-left">
         <div className="avatar">
           <img src={BryanFarrel} alt="Benedictus Adriel" />
           <h4>Bryan Farrel</h4>

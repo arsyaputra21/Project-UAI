@@ -3,6 +3,7 @@ import styled from "styled-components";
 import img from "../../images/about-hero.webp";
 
 const HeroStyled = styled.div`
+  overflow: hidden;
   width: 100%;
   min-height: 80vh;
   padding: 2rem 3rem;
@@ -68,7 +69,7 @@ const HeroSection = () => {
   return (
     <HeroStyled>
       <div className="dummy"></div>
-      <div className="hero-text">
+      <div className="hero-text" data-aos="fade-left">
         <h1>PT Universal Agrobisnis Indonesia</h1>
         <p>
           is an Indonesian company engaged in the export of coconut derivative

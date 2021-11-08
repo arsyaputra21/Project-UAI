@@ -17,9 +17,17 @@ const ButtonStyled = styled.a`
     color: #fff;
     border: #151515;
   }
+
+  @media (max-width: 500px) {
+    transform: scale(0.8);
+  }
 `;
 const Button = (props) => {
-  return <ButtonStyled role="button">{props.children}</ButtonStyled>;
+  return (
+    <ButtonStyled href={props.href} role="button">
+      {props.children}
+    </ButtonStyled>
+  );
 };
 
 export default Button;

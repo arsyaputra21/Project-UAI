@@ -7,7 +7,7 @@ const TeamStyled = styled.div`
   padding: 3rem;
   background-color: #eeeeee;
   h1 {
-    font-size: 3.1875rem;
+    font-size: 4rem;
   }
   div.team-container {
     display: grid;

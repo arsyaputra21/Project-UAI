@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import coconutfiber from "../images/CoconutFiber.webp";
 import peatblock from "../images/peatblock.webp";
 import charcoal from "../images/charcoalbriquette.webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ProductStyled = styled.div`
+  overflow: hidden;
   padding: 2rem 3rem;
   background-color: #9c9c9c;
   h1 {
@@ -130,10 +133,13 @@ const ProductStyled = styled.div`
 `;
 
 const Products = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <ProductStyled>
       <h1>Products</h1>
-      <div className="product">
+      <div className="product" data-aos="fade-right">
         <h2>Coconut Fiber</h2>
         <div className="product-container">
           <div className="img-box">
@@ -170,7 +176,7 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <div className="product ">
+      <div className="product " data-aos="fade-left">
         <h2>Coconut Peat Block</h2>
         <div className="product-container invert">
           <div className="img-box">
@@ -216,7 +222,7 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <div className="product">
+      <div className="product" data-aos="fade-right">
         <h2>Coconut Charcoal Briquette</h2>
         <div className="product-container">
           <div className="img-box">

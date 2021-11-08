@@ -57,6 +57,11 @@ const NavlinkStyled = styled(NavLink)`
     font-weight: 600;
     color: #000;
   }
+  @media screen and (max-width: 991px) {
+    &.navbar-brand {
+      font-size: 1.1rem;
+    }
+  }
   @media screen and (max-width: 768px) {
     color: #fff;
     &.navbar-brand {
@@ -71,7 +76,7 @@ const MobileMenu = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: ${({ isOpen }) => (isOpen ? "fixed" : "absolute")};
     top: 0;
     right: 0;
     transform: translate(-100%, 75%);
@@ -88,7 +93,10 @@ const Navbar = () => {
       <NavlinkStyled to="/" className="navbar-brand">
         Universal Agrobisnis Indonesia
       </NavlinkStyled>
-      <MobileMenu onClick={() => setBurgerOpen(!burgerOpen)}>
+      <MobileMenu
+        isOpen={burgerOpen}
+        onClick={() => setBurgerOpen(!burgerOpen)}
+      >
         {burgerOpen ? <MdClose color="#fff" /> : <FaBars color="#000" />}
       </MobileMenu>
       <NavMenu isOpen={burgerOpen}>

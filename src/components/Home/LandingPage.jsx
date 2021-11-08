@@ -4,6 +4,7 @@ import Button from "../Button";
 
 import landingBG from "../../images/landingpagebg.webp";
 const LandingStyled = styled.div`
+  overflow: hidden;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -16,13 +17,11 @@ const LandingStyled = styled.div`
 
   div.landing-text {
     h1 {
-      font-size: 3.188rem;
+      font-size: 4rem;
       font-weight: 900;
+      padding: 1rem;
     }
-    p {
-      font-size: 1.5rem;
-      font-weight: 200;
-    }
+
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -35,14 +34,9 @@ const LandingStyled = styled.div`
       rgba(244, 246, 245, 0.9) -7.89%,
       rgba(255, 255, 255, 0.9) 132.55%
     );
-    div.text-btn {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.7rem;
-      a {
-        align-self: flex-end;
-      }
+    div.btn-box {
+      align-self: flex-end;
+      padding: 1rem;
     }
   }
   div.landing-bg {
@@ -59,35 +53,29 @@ const LandingStyled = styled.div`
   @media screen and (max-width: 991px) {
     background-position-x: 0px;
     div.landing-text {
-      flex-direction: row;
       width: 100%;
       align-items: center;
-      justify-content: space-evenly;
+
       h1 {
-        font-size: 2.5rem;
+        font-size: 3.4rem;
       }
 
-      div.text-btn {
-        p {
-          font-size: 1.3rem;
-        }
-        a {
-          align-self: flex-start;
-        }
+      div.btn-box {
+        align-self: center;
       }
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 500px) {
     div.landing-text {
       text-align: center;
       flex-direction: column;
       gap: 0;
-      div.text-btn {
-        justify-content: center;
-        a {
-          align-self: center;
-        }
+      h1 {
+        font-size: 2rem;
+      }
+      div.btn-box {
+        transform: scale(0.8);
       }
     }
   }
@@ -95,15 +83,10 @@ const LandingStyled = styled.div`
 const LandingPage = () => {
   return (
     <LandingStyled>
-      <div className="landing-text">
+      <div className="landing-text" data-aos="fade-right">
         <h1>Fulfilling All Your Coconut Needs</h1>
-        <div className="text-btn">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-            reiciendis odit temporibus praesentium inventore ullam unde nostrum,
-            in accusamus rem.
-          </p>
-          <Button>Learn More</Button>
+        <div className="btn-box">
+          <Button href="/about">Learn More</Button>
         </div>
       </div>
     </LandingStyled>

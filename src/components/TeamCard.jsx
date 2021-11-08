@@ -25,6 +25,7 @@ const CardStyled = styled.div`
     }
     div.team-social {
       padding: 1rem 0 0;
+      font-size: 1.3rem;
       a {
         padding: 0 0.5rem;
         color: inherit;
@@ -33,6 +34,7 @@ const CardStyled = styled.div`
     }
   }
   div.img-box {
+    transform: scale(0.8);
     img {
       max-width: 100%;
       height: auto;
@@ -62,10 +64,10 @@ const TeamCard = ({ avatar, name, role, linkedin, instagram }) => {
         <p className="role">{role}</p>
 
         <div className="team-social">
-          <a href={linkedin}>
+          <a target="_blank" href={linkedin}>
             <FaLinkedin />
           </a>
-          <a href={instagram}>
+          <a target="_blank" href={instagram}>
             <FaInstagramSquare />
           </a>
         </div>
