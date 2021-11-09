@@ -14,7 +14,6 @@ function App() {
       <Router>
         <Navbar />
         <FloatingWhatsapp />
-
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
