@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
@@ -87,6 +87,11 @@ const MobileMenu = styled.div`
 `;
 
 const Navbar = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   const [burgerOpen, setBurgerOpen] = useState(false);
   return (
     <NavbarStyled>

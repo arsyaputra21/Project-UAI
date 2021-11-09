@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const CardStyled = styled.div`
   display: flex;
@@ -51,7 +52,7 @@ const CardStyled = styled.div`
 const ProductCard = ({ img, title, desc, link }) => {
   return (
     <CardStyled>
-      <a href={link}>
+      <Link to="/product">
         <div className="img-box">
           <img src={img} alt={title} data-aos="zoom-in" />
         </div>
@@ -63,7 +64,7 @@ const ProductCard = ({ img, title, desc, link }) => {
             <span className="read-more">Read More</span>
           </p>
         </div>
-      </a>
+      </Link>
     </CardStyled>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-const ButtonStyled = styled.a`
+import { Link } from "react-router-dom";
+const ButtonStyled = styled(Link)`
   cursor: pointer;
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
@@ -24,7 +25,7 @@ const ButtonStyled = styled.a`
 `;
 const Button = (props) => {
   return (
-    <ButtonStyled href={props.href} role="button">
+    <ButtonStyled to={props.href} role="button">
       {props.children}
     </ButtonStyled>
   );
