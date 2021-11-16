@@ -5,7 +5,7 @@ import { MdEmail, MdLocationPin } from "react-icons/md";
 import { AiFillPhone } from "react-icons/ai";
 import GoogleMap from "./GoogleMap";
 import Form from "./Contact/Form";
-import { BsInstagram, BsLinkedin } from "react-icons/bs";
+import { BsInstagram, BsLinkedin, BsFacebook } from "react-icons/bs";
 
 const FooterStyled = styled.div`
   padding-top: 1rem;
@@ -155,9 +155,15 @@ const FooterForm = () => {
         </a>
         <a
           target="_blank"
-          href="https://www.linkedin.com/in/pt-universal-agrobisnis-indonesia-b131a3225/"
+          href="https://www.linkedin.com/company/pt-universal-agrobisnis-indonesia/about/"
         >
           <BsLinkedin />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/UniversalAgrobisnisIndonesia/"
+        >
+          <BsFacebook />
         </a>
       </div>
       <div className="copyright">

@@ -34,7 +34,7 @@ const ProductData = [
     productID: "coconutcharcoalbriquette",
     image: charcoal,
     name: "Coconut Charcoal Briquette",
-    desc: "Coconut CHARCOAL BRIQUETTE is made from Coconut shell charcoal.It produces more heat and lasts longer than ordinary charcoal.Coconut charcoal briquette usually used for grilling or barbecue and for smoking shisha/hookah.",
+    desc: "Coconut Charcoal Briquette is made from Coconut shell charcoal.It produces more heat and lasts longer than ordinary charcoal.Coconut charcoal briquette usually used for grilling or barbecue and for smoking shisha/hookah.",
   },
 ];
 
