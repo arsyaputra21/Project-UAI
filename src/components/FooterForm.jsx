@@ -147,10 +147,7 @@ const FooterForm = () => {
         </div>
       </div>
       <div className="social-link">
-        <a
-          target="_blank"
-          href="https://instagram.com/universalagroidn?utm_medium=copy_link"
-        >
+        <a target="_blank" href="https://www.instagram.com/universalagro.ind/">
           <BsInstagram />
         </a>
         <a
